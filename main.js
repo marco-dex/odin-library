@@ -57,16 +57,18 @@ function displayBooks() {
         let book = myLibrary[i]
         let bookElement = document.createElement("div"); 
         bookElement.innerHTML = `
+        <div class="card">
          <div class="card-header">
             <h3>${book.title}</h3>
             <h5>${book.author}</h5>
          </div>
          <div class="card-body">
             <p> ${book.pages} pages </p>
-            <p> ${book.read ? "yes" : "no"} </p>
+            <p> Read: ${book.read ? "yes" : "no"} </p>
          </div>
          <button class="remove-btn" onclick="removeBook(${i})">Remove</button>
          <button class="toggle-btn" onclick="toggleRead(${i})">Toggle Read</button>
+         </div>
         `; 
         library.appendChild(bookElement); 
     }

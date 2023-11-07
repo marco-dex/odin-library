@@ -1,0 +1,14 @@
+body {
+    font-family: sans-serif;
+}
+
+.card {
+    border: solid black 1px;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+form {
+    padding: 10px;
+}
